@@ -33,9 +33,9 @@ public class DictionaryServlet extends HttpServlet {
                 private void sendResponse(HttpServletResponse resp, String smsResponse) {
                                 try {
                                                 PrintWriter out = resp.getWriter();
-                                                /*out.println("<html><head><meta name=\"txtweb-appkey\" content=\"3a7f260b-b1d8-4fc4-86ed-420209b63d85\" /></head><body>"
+                                                out.println("<html><head><meta name=\"txtweb-appkey\" content=\"3a7f260b-b1d8-4fc4-86ed-420209b63d85\" /></head><body>"
                                                                                 +smsResponse 
-                                                                                +"</body></html>"); */
+                                                                                +"</body></html>"); 
                                                 out.println("The meaning of the word  '" + searchWord + "' :: " + smsResponse);
                                 } catch (IOException e) {
                                                 
